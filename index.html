@@ -304,23 +304,44 @@
 
   <!-- Projects Section -->
 
-  <section class="p-5 flex flex-col gap-4">
-    <h2 class="font-bold text-[24px] leading-[40px]">
-  Our collection <br>
-  best project
-</h2>
+  <section class="p-5 flex flex-col gap-4 max-w-[1200px] mx-auto">
+    <h2 class="font-bold text-[20px] sm:text-[24px] md:text-[32px] leading-[28px] sm:leading-[36px] md:leading-[40px]">
+      Our collection <br>
+      best project
+      </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 max-w-[320px] md:max-w-[1200px] mx-auto">
+      <picture>
+  <source media="(min-width: 801px)" srcset="BigImgs/Big1.png" />
+  <source media="(max-width: 800px)" srcset="Projectsimgs/Img1.png" />
+  <img src="./Projectsimgs/Img1.png" alt="Project Image 1" class="w-full h-auto" />
+</picture>
 
-        <div class="grid grid-cols-2">
-          <img src="./Projectsimgs/Img1.png">
-          <img src="./Projectsimgs/img2.png">
-          <img src="./Projectsimgs/img3.png">
-          <img src="./Projectsimgs/img4.png">
+<picture>
+  <source media="(min-width: 801px)" srcset="BigImgs/Big2.png" />
+  <source media="(max-width: 800px)" srcset="Projectsimgs/Img2.png" />
+  <img src="./Projectsimgs/Img2.png" alt="Project Image 2" class="w-full h-auto" />
+</picture>
+
+<picture>
+  <source media="(min-width: 801px)" srcset="BigImgs/Big3.png" />
+  <source media="(max-width: 800px)" srcset="Projectsimgs/Img3.png" />
+  <img src="./Projectsimgs/Img3.png" alt="Project Image 3" class="w-full h-auto" />
+</picture>
+
+<picture>
+  <source media="(min-width: 801px)" srcset="BigImgs/Big4.png" />
+  <source media="(max-width: 800px)" srcset="Projectsimgs/Img4.png" />
+  <img src="./Projectsimgs/Img4.png" alt="Project Image 4" class="w-full h-auto" />
+</picture>
+
+      
         </div>
   </section>
   </main>
 
-  <footer class="bg-[#2B2B2B] text-white p-5">
-   <div class="flex flex-col gap-4">
+  <footer class="bg-[#2B2B2B]">
+   <div class="mx-auto max-w-[1200px] bg-[#2B2B2B] text-white p-5 flex flex-col md:flex-row gap-[40px] md:gap-[140px] py-20">
+    <div class="flex flex-col gap-4 max-w-[550px]">
      <h2>Logo</h2>
     <p>is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.</p>
     <div class="flex mt-4 gap-2">
@@ -344,6 +365,7 @@
     <p>Documentation</p>
     <p>License</p>
     </div>
+   </div>
    </div>
   </footer>
 </body>
