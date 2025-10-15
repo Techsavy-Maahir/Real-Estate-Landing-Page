@@ -132,18 +132,20 @@
       </div>
 
      <!-- Features Section -->
-<section class="p-5">
+<section class="p-5 mx-w-[1200px] mx-auto text-center">
   <div class="flex flex-col text-center gap-2">
     <div class="h-1 w-[90px] bg-gradient-to-r from-[#60BBEE] to-[#2387C0]"></div>
-    <h2 class="text-2xl font-bold text-[#242527] text-start">
+    <div class="flex flex-col text-center gap-2 md:flex-row md:justify-between md:items-end">
+      <h2 class="text-2xl font-bold text-[#242527] text-start">
       What Make Us <br> Different?
     </h2>
-    <p class="text-sm text-gray-700">
+    <p class="text-sm text-gray-700 md:max-w-[560px]">
       Check out our best service you can possibly orders in building your company and don't forget to ask via our email or our customer service if you are interested in using our services
     </p>
+    </div>
   </div>
 
-  <!-- Cards Section -->
+  <!-- Features Cards Section -->
   <div class="flex flex-col text-center gap-2 mt-10"> <!-- mt-10 = 40px -->
     
     <!-- Card 1 -->
@@ -159,7 +161,7 @@
     <!-- Card 2 -->
     <div class="mb-8">
       <div class="flex justify-center items-center mb-2">
-        <img class="shadow-xl" src="/Features-logo/Frame 645.png" alt="">
+        <img class="shadow-xl w-[140px]" src="/Features-logo/Frame 645.png" alt="">
       </div>
       <p class="text-sm text-gray-700">
         The prices we offer you are very competitive without reducing the quality of the company's work in the slightest
@@ -179,7 +181,7 @@
     <!-- Card 4 -->
     <div>
       <div class="flex justify-center items-center mb-2">
-        <img class="shadow-xl" src="/Features-logo/Frame 645 (1).png" alt="">
+        <img class="shadow-xl w-[140px]" src="/Features-logo/Frame 645 (1).png" alt="">
       </div>
       <p class="text-sm text-gray-700">
         The material determines the building itself so we recommend that you use the best & quality materials in its class.
@@ -189,60 +191,67 @@
   </div>
 </section>
 
-  <div class="flex flex-col gap-2 p-2">
-    <!-- Team Section -->
-   <section class="relative p-5">
-  <!-- Container to hold image and gradient box -->
-  <div class="relative">
-    <img
-      src="../Team_imgs/Team_bg.png"
-      alt="Team background"
-      class="w-full h-[340px] object-cover rounded-xl"
-    />
+ <section class="relative p-5 max-w-[1200px] mx-auto flex flex-col lg:flex-row lg:items-center lg:gap-10">
+    
+    <!-- LEFT: Image + Card -->
+    <div class="relative w-full lg:w-1/2 flex justify-center mb-20 lg:mb-0 lg:order-1">
+        <img
+            src="../Team_imgs/Team_bg.png"
+            alt="Team background"
+            class="w-full max-h-[400px] object-cover rounded-xl"
+        />
 
-    <!-- Gradient box: centered horizontally, 25% below image -->
-    <div class="absolute left-1/2 bottom-[-62px] -translate-x-1/2">
-      <div class="h-[250px] w-[250px] bg-gradient-to-b from-[#474747] to-[#222222] rounded-xl shadow-lg ">
-        <img src="Team_imgs\Team_avatar.png" alt="Team Avatar" class=" flex justify-center items-center mt-10 mx-auto" />
-        <h2 class="text-white text-center text-2xl font-bold mt-4">Dianne Russell</h2>
-       <p class="text-amber-50 text-center text-base leading-relaxed sm:px-6 px-3 mt-2">
-          More than 20 years of experience in the field of architecture and has
-          worked on projects up to 100+
-        </p>
-      </div>
+        <div class="absolute left-1/2 bottom-[-62px] -translate-x-1/2 
+                    lg:left-auto lg:right-[-120px] lg:top-1/2 lg:-translate-y-1/2 
+                    lg:bottom-auto lg:translate-x-0">
+            
+            <div class="h-[300px] w-[300px] bg-gradient-to-b from-[#474747] to-[#222222] rounded-xl shadow-2xl p-5 flex flex-col justify-center">
+                <div class="w-16 h-16 rounded-full overflow-hidden mx-auto">
+                    <img src="Team_imgs/Team_avatar.png" alt="Team Avatar" class="w-full h-full object-cover" />
+                </div>
+                
+                <h2 class="text-white text-center text-xl font-bold mt-4">Dianne Russell</h2>
+                <p class="text-amber-50 text-center text-sm leading-snug sm:px-3 px-1 mt-2">
+                    More than 20 years of experience in the field architecture and has
+                    worked on project up to 100+
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
+    
+    <!-- RIGHT: Text content -->
+    <div class="w-full  mt-20 lg:mt-0 lg:order-2 lg:pl-32">
+        <!-- Added lg:pl-32 to push text right -->
+        <h2 class="font-black text-[24px] leading-[32px] font-[Poppins] weight-[700 mb-6">
+            Meet and talk with <br>
+            our best architecture
+        </h2>
 
-    <h2 class="mt-40 font-semibold text-[30px] leading-[32px] font-[Poppins] weight-[600]">
-    Meet and talk with <br>
-    our best architecture
-    </h2>
+        <p class="text-gray-500 mb-8">
+            All our teams are professional and competent in their fields and will help you realize your dream building with the excellent result.
+        </p>
 
-    <p class="text-[18px] font-[Poppins] text-gray-500 mb-8">All our teams are professional and competent in their fields and will help you realize your dream building with the excellent result.</p>
+        <div class="flex items-center gap-6">
+            <button class="bg-[#0A72AD] text-white font-medium px-8 py-3 shadow-md hover:bg-[#085d8c] transition-colors duration-300 rounded-md">
+                See all team
+            </button>
 
-<div class="flex justify-between items-center">
-  <!-- Left Button -->
-  <button class="bg-gradient-to-r from-[#0A72AD] to-[#0A72AD]/80 text-white font-medium px-3 py-2 shadow-md hover:shadow-lg transition-all duration-300">
-    See all Team
-  </button>
-
-  <!-- Right Button + Arrow -->
-  <div class="flex items-center gap-2">
-    <button class="flex items-center gap-2 font-medium text-[#0A72AD] hover:text-[#085d8c] transition-colors duration-300">
-      How it Works
-      <img src="Team_imgs/Vector.png" alt="Arrow Icon" class="w-4 h-4 mt-[2px]" />
-    </button>
-  </div>
-</div>
-</div>
+            <a href="#" class="flex items-center gap-2 font-medium text-gray-900 hover:text-gray-700 transition-colors duration-300 text-lg">
+                How it works 
+                <span class="text-2xl mt-[-2px]">&rarr;</span>
+            </a>
+        </div>
+    </div>
 </section>
 
+
   <!-- Story Section -->
-  <section class="p-5 flex flex-col gap-4">
+  <section class="p-5 flex flex-col gap-4 md:flex-row-reverse max-w-[1200px] mx-auto">
 
-    <img src="./StoryImgs/image.png" alt="Story Image" class="w-full p-5 shadow-xl rounded-xl" />
+    <img src="./StoryImgs/image.png" alt="Story Image" class="w-full p-5 shadow-xl rounded-xl max-w-[570px] flex-1" />
 
-
+    <div class=" flex flex-col gap-4 flex-1">
+        
     <h2 class="font-black text-[24px] leading-[32px] font-[Poppins] weight-[700]">
       Our Story <br>
       Who we are
@@ -251,8 +260,9 @@
       <p class="text-gray-500">Established in 1992, PT. Wahana Cipta operates as a General Contracting company with a footprint that we have planted throughout Indonesia. Initially, we focused on construction in the field of residential housing development in Jakarta. 
       As the company grows, now we are present as a reliable...</p>
       <button class="bg-gradient-to-r from-[#0A72AD] to-[#0A72AD]/80 text-white font-medium px-3 py-2 shadow-md hover:shadow-lg transition-all duration-300 self-start">
-    See More
-  </button>
+        See More
+      </button>
+    </div>
   </section>
 
   <!-- News Update Section -->
@@ -342,7 +352,7 @@
    <div class="mx-auto max-w-[1200px] bg-[#2B2B2B] text-white p-5 flex flex-col md:flex-row gap-[40px] md:gap-[140px] py-20">
     <div class="flex flex-col gap-4 max-w-[550px]">
      <h2>Logo</h2>
-    <p>is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.</p>
+    <p>It is a general contractor company based in Jakarta. More than 25 years of experience in building and carving out Indonesia's development.</p>
     <div class="flex mt-4 gap-2">
       <img src="./SocialLogo/Twitter.png" alt="Twitter">
       <img src="./SocialLogo/Insta.png" alt="Instagram">
